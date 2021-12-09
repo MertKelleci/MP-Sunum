@@ -10,16 +10,16 @@ const ModalComponent = () => {
         transparent={true}
         visible={modalVisible}
         onRequestClose={() => {
-          Alert.alert('Modal has been closed.');
+          Alert.alert('Modal kapatıldı.');
           setModalVisible(!modalVisible);
         }}>
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <Text style={styles.modalText}>Hello World!</Text>
+            <Text style={styles.modalText}>Merhaba!</Text>
             <Pressable
               style={[styles.button, styles.buttonClose]}
               onPress={() => setModalVisible(!modalVisible)}>
-              <Text style={styles.textStyle}>Hide Modal</Text>
+              <Text style={styles.textStyle}>Modal'ı Gizle</Text>
             </Pressable>
           </View>
         </View>
@@ -27,7 +27,7 @@ const ModalComponent = () => {
       <Pressable
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}>
-        <Text style={styles.textStyle}>Show Modal</Text>
+        <Text style={styles.textStyle}>Modal'ı Göster</Text>
       </Pressable>
     </View>
   );

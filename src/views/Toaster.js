@@ -3,12 +3,12 @@ import {View, StyleSheet, ToastAndroid, Button, StatusBar} from 'react-native';
 
 const Toaster = () => {
   const showToast = () => {
-    ToastAndroid.show('A pikachu appeared nearby !', ToastAndroid.SHORT);
+    ToastAndroid.show('Merhaba', ToastAndroid.SHORT);
   };
 
   const showToastWithGravity = () => {
     ToastAndroid.showWithGravity(
-      'Merhaba',
+      'Yukarıdan Merhaba',
       ToastAndroid.SHORT,
       ToastAndroid.TOP,
     );
@@ -16,7 +16,7 @@ const Toaster = () => {
 
   const showToastWithGravityAndOffset = () => {
     ToastAndroid.showWithGravityAndOffset(
-      'Merhaba',
+      'Aşağıdan Merhaba',
       ToastAndroid.LONG,
       ToastAndroid.BOTTOM,
       25,

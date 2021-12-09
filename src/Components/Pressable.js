@@ -24,7 +24,9 @@ const App = () => {
           styles.wrapperCustom,
         ]}>
         {({pressed}) => (
-          <Text style={styles.text}>{pressed ? 'Pressed!' : 'Press Me'}</Text>
+          <Text style={styles.text}>
+            {pressed ? 'Dokunuldu!' : 'Bana Dokun'}
+          </Text>
         )}
       </Pressable>
       <View style={styles.logBox}>
